@@ -198,8 +198,8 @@ function detect_gamepad()
   return -1
 end
 function draw_gamepad(x,y)
-  rectfill(x,y,x+23,y+7, 1)
-  rect(x,y,x+23,y+7, 4)
+  rectfill(x,y,x+23,y+7, 13)
+  --rect(x,y,x+23,y+7, 4)
   if (btn(1,pad)) then spr(9, x, y)     --  right btn
   elseif (btn(2,pad)) then spr(8, x, y) --  up btn
   elseif(btn(3,pad)) then spr(10, x, y)  --  down btn
